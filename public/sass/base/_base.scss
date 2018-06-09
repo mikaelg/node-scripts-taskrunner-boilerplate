@@ -1,0 +1,18 @@
+/* MIG: replacement for normmalize reset css*/
+*,
+*::after,
+*::before
+{
+  margin:0px;
+  padding:0px;
+  /* change boxmodel: margin and heading not added to total width */
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 10px/16px . 100 = 62.5% */
+}
+
+body {
+  box-sizing: border-box;
+}
