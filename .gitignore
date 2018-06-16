@@ -22,3 +22,8 @@ nbproject
 ########
 node_modules
 
+# original images #
+##################
+/images-orig/*
+!/images-orig/README.md
+
