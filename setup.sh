@@ -33,7 +33,7 @@ then
     echo "move sass-boilerplate to public/sass"
     mv ./public/sass/ ./public/sass.bcp
     mv ./sass-boilerplate/stylesheets ./public/sass
-    rm ./sass-boilerplate
+    rm -rf ./sass-boilerplate
 
   else
     echo "sass-boilerplate does not exist or there is already a public/sass directory"
