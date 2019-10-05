@@ -20,6 +20,7 @@ else
 fi
 
 echo "use node version through nvm"
+. ~/.nvm/nvm.sh
 nvm use
 
 _bs=browser-sync
