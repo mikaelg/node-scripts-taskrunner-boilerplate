@@ -1,5 +1,27 @@
 #!/usr/bin/env bash
 
+echo "delete git remote"
+git remote remove origin
+
+read -p "delete and create new git repo (y/n): " _input_git
+if [ $_input_git == "y" ] || [ -z "$_input_git" ]
+then
+  echo "delete existing git repo"
+  sudo rm -R .git
+  
+  echo "initialize git repo"
+  git init
+
+  echo "initial git commit"
+  git add .
+  git commit -m"initial commit"
+else
+  echo "aborted deleting git repo"
+fi
+
+echo "use node version through nvm"
+nvm use
+
 _bs=browser-sync
 echo "check if $_bs is installed globally"
 
@@ -43,18 +65,15 @@ else
   echo "aborted cloning 7-1"
 fi
 
-read -p "create git repo and commit (y/n): " _input_git
+read -p "commit installed project (y/n): " _input_git
 if [ $_input_git == "y" ] || [ -z "$_input_git" ]
 then
-  echo "initialize git repo"
-  git init
 
-  echo "initial git commit"
+  echo "commit installed project"
   git add .
-  git commit -m"initial commit"
+  git commit -m"commit installed project"
 else
   echo "aborted git"
 fi
 
 echo "----- YOUR PROJECT IS READY ------"
-

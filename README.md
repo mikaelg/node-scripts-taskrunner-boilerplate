@@ -1,6 +1,7 @@
 # node sass boilerplate
 
 1. This boilerplate uses:
+  * nvm
   * node
   * imagemin-cli
   * sass
