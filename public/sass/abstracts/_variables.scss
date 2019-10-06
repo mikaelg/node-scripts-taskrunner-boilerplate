@@ -20,6 +20,29 @@ $color-grey-dark: #424242;
 $color-white: #fff;
 $color-black: #000;
 
+// RATIOS
+$ratio: 1.125;
+$golden-ratio: 1.68; /* the golden ratio */
 
-// FONT SIZES
-$default-font-size: 1.6rem
+// FONTS 
+$font-family-default: "Roboto", sans-serif;
+$font-family-alt: "Nunito Sans", sans-serif;
+$default-font-size: 1.6rem;
+
+/* Do math: */
+$h5: $default-font-size * $ratio;
+$h4: $h5 * $ratio;
+$h3: $h4 * $ratio;
+$h2: $h3 * $ratio;
+$h1: $h2 * $ratio;
+
+$small: $default-font-size / ($ratio);
+$xsmall: $small / ($ratio);
+
+// MARGINS & PADDING
+$ver-space: 26px;
+$hor-space: 2 * $ver-space;
+$gutter: $ver-space;
+
+$ver-space--small: $ver-space / $golden-ratio;
+$ver-space--xsmall: $ver-space--small / $golden-ratio;

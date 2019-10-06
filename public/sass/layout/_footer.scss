@@ -1,0 +1,11 @@
+.footer{
+  background-color: $color-primary-light;
+}
+
+.footer-bar{
+  background-color: $color-grey;
+
+  .container-inner {
+    padding: $ver-space--xsmall $hor-space;
+  }
+}

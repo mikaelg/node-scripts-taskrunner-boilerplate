@@ -2,7 +2,7 @@
 
 1. This boilerplate uses:
   * nvm
-  * node
+  * node (10.14.2)
   * imagemin-cli
   * sass
   * browsersync

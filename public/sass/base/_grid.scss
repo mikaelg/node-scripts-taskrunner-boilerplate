@@ -1,0 +1,35 @@
+.outer-wrapper {
+  //margin: 0 auto;
+  //max-width: 1100px;
+}
+
+.container{
+  padding: 0;
+
+  &-inner {
+    padding: 0 $hor-space $ver-space $hor-space;
+    margin: 0 auto;
+    max-width: 1100px;
+
+    &--space-around {
+      padding: $ver-space $hor-space;
+    }
+
+    &--nobottom {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.column{
+  display:flex;
+  justify-content: space-between;
+
+  div {
+    flex:0 1 auto;
+  }
+  div + div {
+    margin-left: $gutter;
+  }
+}
+

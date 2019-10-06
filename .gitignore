@@ -27,3 +27,7 @@ node_modules
 /images-orig/*
 !/images-orig/README.md
 
+# test files #
+###############
+test.txt
+test.html
