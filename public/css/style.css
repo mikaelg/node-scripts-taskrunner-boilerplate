@@ -138,6 +138,15 @@ ul ul ul > li::before {
   margin-left: 3.2rem;
   color: #FFCDD2; }
 
+blockquote {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.6em solid #FFCDD2;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem; }
+  blockquote:before, blockquote:after {
+    content: none; }
+
 .container {
   padding: 0; }
   .container-inner {

@@ -108,5 +108,17 @@ ul ul ul > li::before {
   color: $color-primary-light ;
 }
 
+blockquote {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.6em solid $color-primary-light;
+  font-family: $font-family-alt;
+  font-size: $default-font-size;
+  &:before, &:after {
+      content: none;
+   }
+
+}
+
 
 
