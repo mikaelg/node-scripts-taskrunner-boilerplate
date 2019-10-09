@@ -33,3 +33,15 @@
   }
 }
 
+.container-bgr{
+  background-color: $color-white;
+
+  &--light{
+    background-color: $color-primary-light;
+  }
+
+  &--grey-light{
+    background-color: $color-grey-light;
+  }
+}
+

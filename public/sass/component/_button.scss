@@ -1,0 +1,52 @@
+a.button {
+  display:inline-block;
+  padding: $ver-space--xsmall $hor-space--xsmall;
+  margin: .5rem 0;
+
+  border: 1px solid $color-primary;
+  border-radius: .3rem;
+
+  background-color: $color-white;
+  color: $color-primary;
+  transition: all .5s;
+
+  &:hover,
+  &:active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &:link,
+  &:visited {
+  
+  }
+
+  &--solid {
+    background-color: $color-primary;
+    color: $color-white; 
+    
+    &:hover,
+    &:active {
+      background-color: $color-white;
+      color: $color-primary; 
+    }
+  }
+
+  &--solid-dark {
+    background-color: $color-primary-dark;
+    color: $color-white; 
+    
+    &:hover,
+    &:active {
+      background-color: $color-white;
+      color: $color-primary-dark; 
+    }
+  }
+
+  &--small {
+    padding: $ver-space--xsmall/2 $hor-space--xsmall/2;
+  }
+}
+
+
+

@@ -14,7 +14,7 @@ $color-primary-light:#FFCDD2;
 $color-primary-dark:#B71C1C;
 
 $color-grey: #757575;
-$color-grey-ligt: #E0E0E0;
+$color-grey-light: #E0E0E0;
 $color-grey-dark: #424242;
 
 $color-white: #fff;
@@ -46,3 +46,4 @@ $gutter: $ver-space;
 
 $ver-space--small: $ver-space / $golden-ratio;
 $ver-space--xsmall: $ver-space--small / $golden-ratio;
+$hor-space--xsmall: 2 * $ver-space--xsmall;
