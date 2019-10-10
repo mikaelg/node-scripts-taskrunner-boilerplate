@@ -29,6 +29,9 @@ body {
   box-sizing: border-box; }
 
 /* DEBUG */
+* {
+  outline: 5px solid rgba(0, 128, 0, 0.2); }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -149,29 +152,33 @@ blockquote {
 
 .container {
   padding: 0; }
-  .container-inner {
+  .container .container-inner {
     padding: 0 52px 26px 52px;
     margin: 0 auto;
     max-width: 1100px; }
-    .container-inner--space-around {
+    .container .container-inner--space-around {
       padding: 26px 52px; }
-    .container-inner--nobottom {
+    .container .container-inner--nobottom {
       padding-bottom: 0; }
+  .container-bgr {
+    background-color: #fff; }
+    .container-bgr--light {
+      background-color: #FFCDD2; }
+    .container-bgr--grey-light {
+      background-color: #E0E0E0; }
 
-.column {
+.columns {
   display: flex;
   justify-content: space-between; }
-  .column div {
-    flex: 0 1 auto; }
-  .column div + div {
-    margin-left: 26px; }
-
-.container-bgr {
-  background-color: #fff; }
-  .container-bgr--light {
-    background-color: #FFCDD2; }
-  .container-bgr--grey-light {
-    background-color: #E0E0E0; }
+  .columns div {
+    flex: 1 1 auto;
+    margin-right: 26px; }
+  .columns .columns--2col > div:nth-of-type(2n) {
+    margin-right: 0px; }
+  .columns .columns--3col > div:nth-of-type(3n) {
+    margin-right: 0px; }
+  .columns .columns--4col > div:nth-of-type(4n) {
+    margin-right: 0px; }
 
 .u-center-text {
   text-align: center !important; }

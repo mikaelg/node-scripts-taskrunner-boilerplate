@@ -6,7 +6,7 @@
 .container{
   padding: 0;
 
-  &-inner {
+  & &-inner {
     padding: 0 $hor-space $ver-space $hor-space;
     margin: 0 auto;
     max-width: 1100px;
@@ -19,29 +19,49 @@
       padding-bottom: 0;
     }
   }
+
+  &-bgr{
+    background-color: $color-white;
+  
+    &--light{
+      background-color: $color-primary-light;
+    }
+  
+    &--grey-light{
+      background-color: $color-grey-light;
+    }
+  }
 }
 
-.column{
+
+
+.columns{
   display:flex;
   justify-content: space-between;
 
   div {
-    flex:0 1 auto;
+    flex:1 1 auto;
+    margin-right: $gutter;
   }
-  div + div {
-    margin-left: $gutter;
+
+  & &--2col {
+    > div:nth-of-type(2n){
+      margin-right: 0px
+    }
   }
+
+  & &--3col { 
+    > div:nth-of-type(3n){
+      margin-right: 0px
+    }
+  }
+
+  & &--4col { 
+    > div:nth-of-type(4n){
+      margin-right: 0px
+    }
+  }
+
 }
 
-.container-bgr{
-  background-color: $color-white;
-
-  &--light{
-    background-color: $color-primary-light;
-  }
-
-  &--grey-light{
-    background-color: $color-grey-light;
-  }
-}
 
