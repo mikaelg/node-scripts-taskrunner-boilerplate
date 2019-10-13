@@ -47,3 +47,19 @@ $gutter: $ver-space;
 $ver-space--small: $ver-space / $golden-ratio;
 $ver-space--xsmall: $ver-space--small / $golden-ratio;
 $hor-space--xsmall: 2 * $ver-space--xsmall;
+
+// GRID
+$container-width: 1158px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+

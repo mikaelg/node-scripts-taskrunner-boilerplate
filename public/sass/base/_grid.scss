@@ -1,15 +1,15 @@
 .outer-wrapper {
   //margin: 0 auto;
-  //max-width: 1100px;
+  //max-width: $container-width;
 }
 
 .container{
   padding: 0;
 
-  & &-inner {
+  &-inner {
     padding: 0 $hor-space $ver-space $hor-space;
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: $container-width;
 
     &--space-around {
       padding: $ver-space $hor-space;
@@ -34,31 +34,137 @@
 }
 
 
-
 .columns{
   display:flex;
+  flex-flow: column;
   justify-content: space-between;
 
-  div {
-    flex:1 1 auto;
-    margin-right: $gutter;
+  > div {
+    flex:0 1 auto;
   }
 
-  & &--2col {
-    > div:nth-of-type(2n){
-      margin-right: 0px
+  &--2col {
+    @include breakpoint-sm {
+      flex-flow: row;
+
+      > div {
+        margin-right: $gutter;
+      }
+
+      > div:nth-of-type(2n){
+        margin-right: 0px
+      }
     }
   }
 
-  & &--3col { 
-    > div:nth-of-type(3n){
-      margin-right: 0px
+  &--3col { 
+    flex-flow: row;
+    flex-wrap:wrap;
+
+
+    @include breakpoint-only-sm {
+      > div {
+        flex: 1 0 34%;
+        margin-right: $gutter;
+      }
+
+      > div:nth-of-type(2n), div:last-child{
+        margin-right: 0px
+      }
+
+    }
+
+    @include breakpoint-md {    
+      > div {
+        flex: 1;
+        margin-right: $gutter;
+      }
+
+      > div:nth-of-type(3n){
+        margin-right: 0px
+      }
     }
   }
 
-  & &--4col { 
-    > div:nth-of-type(4n){
-      margin-right: 0px
+  &--4col { 
+    flex-flow: row;
+    flex-wrap:wrap;
+
+    @media (min-width: #{$screen-sm-min} ) and (max-width: 624px - 0.02px)  {
+      > div {
+        flex: 1 0 30%;
+        margin-right: $gutter;
+      }
+
+      > div:nth-of-type(2n), div:last-child{
+        margin-right: 0px
+      }
+    }
+
+    @media (min-width: 624px ) and (max-width: #{$screen-md-min - 0.02px})  {
+
+      > div {
+        flex: 1 0 30%;
+        margin-right: $gutter;
+      }
+
+      > div:nth-of-type(3n), div:last-child{
+        margin-right: 0px
+      }
+
+    }
+    @include breakpoint-md {  
+
+      div {
+        flex: 1;
+        margin-right: $gutter;
+      }
+
+      > div:nth-of-type(4n){
+        margin-right: 0px
+      }
+    }
+  }
+
+  &--4col-cards { 
+    flex-flow: row;
+    flex-wrap:wrap;
+
+    @media (min-width: #{$screen-sm-min} ) and (max-width: 641px - 0.02px)  {
+      > div {
+        flex: 1 0 auto;
+        margin-right: $gutter;
+        max-width: 46.4% ;
+      }
+
+      > div:nth-of-type(2n), div:last-child{
+        margin-right: 0px
+      }
+    }
+
+    @media (min-width: 641px ) and (max-width: #{$screen-md-min - 0.02px})  {
+
+      > div {
+        flex: 1 0 auto;
+        margin-right: $gutter;
+        max-width: 30% ;
+      }
+
+      > div:nth-of-type(3n), div:last-child{
+        margin-right: 0px
+      }
+
+    }
+    @include breakpoint-md {  
+
+      div {
+        flex: 1;
+        margin-right: $gutter;
+      }
+
+      > div:nth-of-type(4n){
+        margin-right: 0px
+      }
     }
   }
 

@@ -12,3 +12,54 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERIES
+
+// Small devices
+@mixin breakpoint-sm {
+  @media (min-width: #{$screen-sm-min} ) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin breakpoint-md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin breakpoint-lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin breakpoint-xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+// Small devices only
+@mixin breakpoint-only-sm {
+  @media (min-width: #{$screen-sm-min} ) and (max-width: #{$screen-md-min - 0.02})  {
+      @content;
+  }
+}
+
+// Medium devices only
+@mixin breakpoint-only-md {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min - 0.02}) {
+      @content;
+  }
+}
+
+// Large devices only
+@mixin breakpoint-only-lg {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min - 0.02}) {
+      @content;
+  }
+}
