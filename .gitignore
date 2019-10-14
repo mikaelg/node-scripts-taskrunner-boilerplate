@@ -30,4 +30,4 @@ node_modules
 # test files #
 ###############
 test.txt
-test.html
+#test.html
