@@ -29,6 +29,9 @@ body {
   box-sizing: border-box; }
 
 /* DEBUG */
+* {
+  outline: 5px solid rgba(0, 128, 0, 0.2); }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -240,6 +243,38 @@ blockquote {
         flex: 1;
         margin-right: 26px; }
       .columns--4col-cards > div:nth-of-type(4n) {
+        margin-right: 0px; } }
+  .columns--3col-cards {
+    flex-flow: row;
+    flex-wrap: wrap; }
+    @media (min-width: 576px) and (max-width: 766.98px) {
+      .columns--3col-cards > div {
+        flex: 1 0 auto;
+        margin-right: 26px;
+        max-width: 48%; }
+      .columns--3col-cards > div:nth-of-type(2n), .columns--3col-cards div:last-child {
+        margin-right: 0px; } }
+    @media (min-width: 768px) {
+      .columns--3col-cards div {
+        flex: 1;
+        margin-right: 26px; }
+      .columns--3col-cards > div:nth-of-type(3n) {
+        margin-right: 0px; } }
+  .columns--2col-cards {
+    flex-flow: row;
+    flex-wrap: wrap; }
+    @media (min-width: 576px) and (max-width: 754.98px) {
+      .columns--2col-cards > div {
+        flex: 1 0 auto;
+        margin-right: 26px;
+        max-width: 47.2%; }
+      .columns--2col-cards > div:nth-of-type(2n), .columns--2col-cards div:last-child {
+        margin-right: 0px; } }
+    @media (min-width: 768px) {
+      .columns--2col-cards div {
+        flex: 1;
+        margin-right: 26px; }
+      .columns--2col-cards > div:nth-of-type(2n) {
         margin-right: 0px; } }
 
 .u-center-text {
