@@ -150,7 +150,7 @@ blockquote {
 .container {
   padding: 0; }
   .container-inner {
-    padding: 26px 52px 26px 52px;
+    padding: 26px 52px;
     margin: 0 auto;
     max-width: 1158px; }
     .container-inner--space-around {
