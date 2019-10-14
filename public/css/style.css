@@ -174,8 +174,7 @@ blockquote {
 
 .columns {
   display: flex;
-  flex-flow: column;
-  justify-content: space-between; }
+  flex-flow: column; }
   .columns > div {
     flex: 0 1 auto; }
   @media (min-width: 576px) {
@@ -227,14 +226,14 @@ blockquote {
     @media (min-width: 576px) and (max-width: 640.98px) {
       .columns--4col-cards > div {
         flex: 1 0 auto;
-        margin-right: 26px;
-        max-width: 46.4%; }
+        margin-right: 5%;
+        max-width: 47.5%; }
       .columns--4col-cards > div:nth-of-type(2n), .columns--4col-cards div:last-child {
         margin-right: 0px; } }
     @media (min-width: 641px) and (max-width: 767.98px) {
       .columns--4col-cards > div {
         flex: 1 0 auto;
-        margin-right: 26px;
+        margin-right: 5%;
         max-width: 30%; }
       .columns--4col-cards > div:nth-of-type(3n), .columns--4col-cards div:last-child {
         margin-right: 0px; } }
@@ -250,8 +249,8 @@ blockquote {
     @media (min-width: 576px) and (max-width: 766.98px) {
       .columns--3col-cards > div {
         flex: 1 0 auto;
-        margin-right: 26px;
-        max-width: 48%; }
+        margin-right: 5%;
+        max-width: 47.5%; }
       .columns--3col-cards > div:nth-of-type(2n), .columns--3col-cards div:last-child {
         margin-right: 0px; } }
     @media (min-width: 768px) {
@@ -266,8 +265,8 @@ blockquote {
     @media (min-width: 576px) and (max-width: 754.98px) {
       .columns--2col-cards > div {
         flex: 1 0 auto;
-        margin-right: 26px;
-        max-width: 47.2%; }
+        margin-right: 5%;
+        max-width: 47.5%; }
       .columns--2col-cards > div:nth-of-type(2n), .columns--2col-cards div:last-child {
         margin-right: 0px; } }
     @media (min-width: 768px) {
