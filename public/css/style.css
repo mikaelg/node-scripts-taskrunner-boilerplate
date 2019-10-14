@@ -29,9 +29,6 @@ body {
   box-sizing: border-box; }
 
 /* DEBUG */
-* {
-  outline: 5px solid rgba(0, 128, 0, 0.2); }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -153,12 +150,17 @@ blockquote {
 .container {
   padding: 0; }
   .container-inner {
-    padding: 0 52px 26px 52px;
+    padding: 26px 52px 26px 52px;
     margin: 0 auto;
     max-width: 1158px; }
     .container-inner--space-around {
       padding: 26px 52px; }
     .container-inner--nobottom {
+      padding-bottom: 0; }
+    .container-inner--notop {
+      padding-top: 0; }
+    .container-inner--novertpadding {
+      padding-top: 0;
       padding-bottom: 0; }
   .container-bgr {
     background-color: #fff; }
@@ -295,3 +297,6 @@ a.button {
   background-color: #757575; }
   .footer-bar .container-inner {
     padding: 9.21202px 52px; }
+
+.column {
+  margin-bottom: 26px; }

@@ -7,7 +7,7 @@
   padding: 0;
 
   &-inner {
-    padding: 0 $hor-space $ver-space $hor-space;
+    padding: $ver-space $hor-space $ver-space $hor-space;
     margin: 0 auto;
     max-width: $container-width;
 
@@ -16,6 +16,15 @@
     }
 
     &--nobottom {
+      padding-bottom: 0;
+    }
+
+    &--notop {
+      padding-top: 0;
+    }
+
+    &--novertpadding {
+      padding-top: 0;
       padding-bottom: 0;
     }
   }
