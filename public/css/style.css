@@ -29,6 +29,9 @@ body {
   box-sizing: border-box; }
 
 /* DEBUG */
+* {
+  outline: 5px solid rgba(0, 128, 0, 0.2); }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -223,15 +226,15 @@ blockquote {
     @media (min-width: 576px) and (max-width: 640.98px) {
       .columns--4col-cards > div {
         flex: 1 0 auto;
-        margin-right: 5%;
-        max-width: 47.5%; }
+        margin-right: 26px;
+        max-width: calc((100% - 26px) / 2); }
       .columns--4col-cards > div:nth-of-type(2n), .columns--4col-cards div:last-child {
         margin-right: 0px; } }
     @media (min-width: 641px) and (max-width: 767.98px) {
       .columns--4col-cards > div {
         flex: 1 0 auto;
-        margin-right: 5%;
-        max-width: 30%; }
+        margin-right: 26px;
+        max-width: calc((100% - (26px * 2)) / 3); }
       .columns--4col-cards > div:nth-of-type(3n), .columns--4col-cards div:last-child {
         margin-right: 0px; } }
     @media (min-width: 768px) {
@@ -246,8 +249,8 @@ blockquote {
     @media (min-width: 576px) and (max-width: 766.98px) {
       .columns--3col-cards > div {
         flex: 1 0 auto;
-        margin-right: 5%;
-        max-width: 47.5%; }
+        margin-right: 26px;
+        max-width: calc((100% - 26px) / 2); }
       .columns--3col-cards > div:nth-of-type(2n), .columns--3col-cards div:last-child {
         margin-right: 0px; } }
     @media (min-width: 768px) {
