@@ -16,9 +16,9 @@ The setup script will:
   * optionally: create git repo and commit
 
 3. available npm commands
-  * start develop: npm run start
-  * build for production: npm run build:css
-  * optimize images: npm run imagemin
+  * start develop: nvm exec npm run start
+  * build for production: nvm exec npm run build:css
+  * optimize images: nvm exe npm run imagemin
 
 4. remove all installed from bash
 sudo rm -R node_modules .git sass-boilerplate; rm package-lock.json
