@@ -29,9 +29,6 @@ body {
   box-sizing: border-box; }
 
 /* DEBUG */
-* {
-  outline: 5px solid rgba(0, 128, 0, 0.2); }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -325,14 +322,27 @@ a.button {
     padding: 4.60601px 9.21202px; }
 
 .card {
-  border: 1px solid #EF5350;
-  border-radius: .5rem; }
-  .card__body {
+  background-color: #E0E0E0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .card__main {
     padding: 2rem; }
   .card__image {
     width: 100%;
-    overflow: hidden;
-    border-radius: .5rem .5rem 0 0; }
+    border-radius: 1rem 1rem 0 0; }
+  .card__bottom {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem 2rem 2rem;
+    margin-top: auto; }
+  .card__header {
+    display: flex;
+    justify-content: start; }
+    .card__header > a {
+      margin-left: 1rem; }
 
 .footer {
   background-color: #FFCDD2; }

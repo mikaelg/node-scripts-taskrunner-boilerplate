@@ -1,15 +1,39 @@
 .card {
-    //background-color: $color-grey-light;
-    border: 1px solid $color-primary;
-    border-radius: .5rem;
+    background-color: $color-grey-light;
+    //border: 1px solid $color-primary;
+    border-radius: 1rem;
 
-    &__body {
+    box-shadow: 0 4px 8px 0 rgba($color-black, 0.2), 0 6px 20px 0 rgba($color-black, 0.19);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    &__main {
         padding:2rem;
     }
 
     &__image {
         width: 100%;
-        overflow: hidden;
-        border-radius: .5rem .5rem 0 0;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+
+        padding: 0 2rem 2rem 2rem; 
+        margin-top: auto;
+    }
+
+    &__header {
+        display:flex;
+        justify-content: start;
+
+        > a {
+            margin-left: 1rem;
+        }
     }
 }
+
+
