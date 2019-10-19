@@ -352,5 +352,42 @@ a.button {
   .footer-bar .container-inner {
     padding: 9.21202px 52px; }
 
+.header > .container-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.header__branding {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto; }
+  @media (min-width: 768px) {
+    .header__branding {
+      order: 1; } }
+
+.header__navigation {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .header__navigation {
+      order: 3; } }
+
+.header__content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  text-align: center; }
+  .header__content > span {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2.56289rem;
+    font-weight: 800; }
+  @media (min-width: 768px) {
+    .header__content {
+      flex-basis: auto;
+      order: 2;
+      padding: 0 26px; } }
+
 .column {
   margin-bottom: 26px; }
