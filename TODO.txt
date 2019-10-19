@@ -1,0 +1,12 @@
+TODO
+********************
+
+1/ IE debug cards
+2/ split design system pages
+- index
+- typography / buttons
+- collumns
+- cards
+
+3/ Header
+4/ navigation: hamburger
