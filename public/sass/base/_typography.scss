@@ -53,11 +53,12 @@ a {
   font-family: $font-family-default;
   text-decoration:none;
   color: $color-grey-dark;
-  border-bottom: .1rem solid rgba($color-grey-dark, .2);
+  //border-bottom: .1rem solid rgba($color-grey-dark, .2);
+  box-shadow: inset 0 -.1rem 0px 0px rgba($color-grey-dark, .2);
 
   &:hover,
   &:active {
-    border-bottom: .2rem solid rgba($color-grey-dark, .2);
+    box-shadow: inset 0 -.2rem 0px 0px rgba($color-grey-dark, .2);
   }
 
   &:link,
