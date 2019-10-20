@@ -7,18 +7,8 @@ $icon-height: $icon-bar-height + $icon-bar-top--bottom; // 45px
 $icon-width: ($icon-height / 3) * 4 ; //60px;
 
 // STYLING
-
-* {
-  margin: 0;
-  padding: 0; 
-}
-
-
 .nav-icon__container {
   background-color: $color-primary;
-//   position: absolute;
-//   top: 2rem;
-//   left: 2rem;
   width:5rem;
   height:5rem;
   border-radius:50%;
@@ -33,6 +23,10 @@ $icon-width: ($icon-height / 3) * 4 ; //60px;
 }
 
 #nav-icon {
+    z-index: map-get($z-index, nav-icon);
+}
+
+.nav-icon {
   width: $icon-width;
   height: $icon-height;
 

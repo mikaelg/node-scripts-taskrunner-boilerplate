@@ -63,3 +63,10 @@ $screen-lg-min: 992px;
 // Large tablets and desktops
 $screen-xl-min: 1200px;
 
+// Z-INDEX 
+
+$z-index: (
+  nav-icon           : 999,
+  navigation         : 888,
+);
+
