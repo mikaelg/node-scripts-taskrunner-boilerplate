@@ -29,6 +29,9 @@ body {
   box-sizing: border-box; }
 
 /* DEBUG */
+* {
+  outline: 5px solid rgba(0, 128, 0, 0.2); }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -356,6 +359,12 @@ a.button {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
+  .header > .container-inner > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5rem;
+    min-width: 5rem; }
 
 .header__branding {
   flex-grow: 0;
@@ -365,11 +374,19 @@ a.button {
     .header__branding {
       order: 1; } }
 
-.header__navigation {
+.header__search {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   margin-left: auto; }
+  @media (min-width: 768px) {
+    .header__search {
+      order: 3; } }
+
+.header__navigation {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto; }
   @media (min-width: 768px) {
     .header__navigation {
       order: 3; } }
@@ -377,8 +394,7 @@ a.button {
 .header__content {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 100%;
-  text-align: center; }
+  flex-basis: 100%; }
   .header__content > span {
     font-family: "Nunito Sans", sans-serif;
     font-size: 2.56289rem;
