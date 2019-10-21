@@ -8,6 +8,7 @@ $icon-width: ($icon-height / 3) * 4 ; //60px;
 
 // STYLING
 .nav-icon__container {
+  position: relative;
   background-color: $color-primary;
   width:5rem;
   height:5rem;
@@ -19,11 +20,19 @@ $icon-width: ($icon-height / 3) * 4 ; //60px;
   align-items:center;
   
   animation: pulsate 5s infinite 2s;
+
+  &--zindex {
+    z-index: map-get($z-index, nav-icon);
+  }
+
+  &.fixed {
+    position: fixed;
+  }
   
 }
 
 #nav-icon {
-    z-index: map-get($z-index, nav-icon);
+
 }
 
 .nav-icon {

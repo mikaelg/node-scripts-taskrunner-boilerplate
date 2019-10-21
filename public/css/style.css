@@ -147,7 +147,6 @@ ul ul ul > li::before {
   color: #FFCDD2; }
 
 blockquote {
-  position: relative;
   padding-left: 1em;
   border-left: 0.6em solid #FFCDD2;
   font-family: "Nunito Sans", sans-serif;
@@ -303,6 +302,7 @@ blockquote {
   margin-top: 1.5rem !important; }
 
 .nav-icon__container {
+  position: relative;
   background-color: #EF5350;
   width: 5rem;
   height: 5rem;
@@ -312,9 +312,10 @@ blockquote {
   justify-content: center;
   align-items: center;
   animation: pulsate 5s infinite 2s; }
-
-#nav-icon {
-  z-index: 999; }
+  .nav-icon__container--zindex {
+    z-index: 999; }
+  .nav-icon__container.fixed {
+    position: fixed; }
 
 .nav-icon {
   width: 26.66667px;
@@ -350,8 +351,6 @@ blockquote {
       top: 8px; }
     .nav-icon span:nth-child(4) {
       top: 16px; }
-  .nav-icon.open {
-    position: fixed; }
   .nav-icon.open span:nth-child(1) {
     top: 8px;
     width: 0%;
@@ -484,12 +483,16 @@ a.button {
   height: 100%;
   width: 0;
   position: fixed;
+  z-index: 888;
   top: 0;
   right: 0;
   background-color: #FFCDD2;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 12rem; }
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .navigation.open {
     width: 100%; }
 

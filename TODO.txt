@@ -9,4 +9,5 @@ TODO
 - cards
 
 3/ Header
-4/ navigation: hamburger
+4/ navigation: hamburger, menu
+5/ paralax
