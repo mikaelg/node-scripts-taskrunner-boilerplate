@@ -443,6 +443,10 @@ a.button {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto; }
+  .header__branding > a {
+    box-shadow: none; }
+    .header__branding > a:hover, .header__branding > a:active {
+      box-shadow: none; }
   @media (min-width: 768px) {
     .header__branding {
       order: 1; } }
@@ -478,6 +482,11 @@ a.button {
       flex-basis: auto;
       order: 2;
       padding: 0 26px; } }
+
+#logo {
+  width: 5rem; }
+  #logo .cls-1 {
+    fill: #EF5350; }
 
 .navigation {
   height: 100%;

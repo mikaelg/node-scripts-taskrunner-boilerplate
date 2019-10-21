@@ -21,6 +21,17 @@
         flex-shrink: 1;
         flex-basis: auto;
 
+        & > a {
+            box-shadow: none;
+          
+            &:hover,
+            &:active {
+              box-shadow: none;
+            }
+          
+
+        }
+
         @include breakpoint-md {
             order:1;
         }
@@ -69,4 +80,12 @@
         }
     }
 
+}
+
+#logo {
+    width: 5rem;
+
+    .cls-1 {
+        fill: $color-primary;
+    }
 }
