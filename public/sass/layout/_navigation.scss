@@ -7,15 +7,25 @@
     right:0;
     background-color: $color-primary-light;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: width 0.5s;
     padding-top: 12rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    & > ul {
+        //opacity: 0;
+        //transition: opacity .5s ease-in .5s;
+    }
+
     &.open {
         width:100%;
+
+        // & > ul {
+        //     opacity: 1;
+        // }
+
     }
 
 }

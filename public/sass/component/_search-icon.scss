@@ -1,0 +1,19 @@
+.search-icon {
+  display: inline-block;
+  width: 1.8em;
+  height: 1.8em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: $color-white;
+
+  &__container {
+    background-color: $color-primary;
+    width:5rem;
+    height:5rem;
+    border-radius:50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

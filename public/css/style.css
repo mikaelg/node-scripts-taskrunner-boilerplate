@@ -301,6 +301,22 @@ blockquote {
 .u-margin-top-small {
   margin-top: 1.5rem !important; }
 
+.search-icon {
+  display: inline-block;
+  width: 1.8em;
+  height: 1.8em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #fff; }
+  .search-icon__container {
+    background-color: #EF5350;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
 .nav-icon__container {
   position: relative;
   background-color: #EF5350;
@@ -444,7 +460,9 @@ a.button {
   flex-shrink: 1;
   flex-basis: auto; }
   .header__branding > a {
-    box-shadow: none; }
+    box-shadow: none;
+    display: flex;
+    align-items: center; }
     .header__branding > a:hover, .header__branding > a:active {
       box-shadow: none; }
   @media (min-width: 768px) {
@@ -497,7 +515,7 @@ a.button {
   right: 0;
   background-color: #FFCDD2;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: width 0.5s;
   padding-top: 12rem;
   display: flex;
   flex-direction: column;
