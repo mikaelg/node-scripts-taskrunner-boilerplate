@@ -369,31 +369,39 @@ blockquote {
     width: 0%;
     left: 50%; }
 
-a.button {
+a.button, input.button {
   display: inline-block;
   padding: 9.21202px 18.42404px;
-  margin: .5rem 0;
+  margin: .5rem .5rem .5rem 0;
   border: 1px solid #EF5350;
   border-radius: .3rem;
   background-color: #fff;
   color: #EF5350;
+  font-size: inherit;
+  line-height: inherit;
   transition: all .5s; }
-  a.button:hover, a.button:active {
+  a.button:hover, a.button:active, input.button:hover, input.button:active {
     background-color: #EF5350;
     color: #fff; }
-  a.button--solid {
+  a.button:active, input.button:active {
+    background-color: #B71C1C; }
+  a.button--solid, input.button--solid {
     background-color: #EF5350;
     color: #fff; }
-    a.button--solid:hover, a.button--solid:active {
+    a.button--solid:hover, a.button--solid:active, input.button--solid:hover, input.button--solid:active {
       background-color: #fff;
       color: #EF5350; }
-  a.button--solid-dark {
+    a.button--solid:active, input.button--solid:active {
+      background-color: #FFCDD2; }
+  a.button--solid-dark, input.button--solid-dark {
     background-color: #B71C1C;
     color: #fff; }
-    a.button--solid-dark:hover, a.button--solid-dark:active {
+    a.button--solid-dark:hover, a.button--solid-dark:active, input.button--solid-dark:hover, input.button--solid-dark:active {
       background-color: #fff;
       color: #B71C1C; }
-  a.button--small {
+    a.button--solid-dark:active, input.button--solid-dark:active {
+      background-color: #FFCDD2; }
+  a.button--small, input.button--small {
     padding: 4.60601px 9.21202px; }
 
 .card {

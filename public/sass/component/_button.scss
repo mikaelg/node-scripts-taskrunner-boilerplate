@@ -1,19 +1,25 @@
-a.button {
+a.button, input.button {
   display:inline-block;
   padding: $ver-space--xsmall $hor-space--xsmall;
-  margin: .5rem 0;
+  margin: .5rem .5rem .5rem 0;
 
   border: 1px solid $color-primary;
   border-radius: .3rem;
 
   background-color: $color-white;
   color: $color-primary;
+  font-size: inherit;
+  line-height: inherit;
   transition: all .5s;
 
   &:hover,
   &:active {
     background-color: $color-primary;
     color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-primary-dark;
   }
 
   &:link,
@@ -30,6 +36,9 @@ a.button {
       background-color: $color-white;
       color: $color-primary; 
     }
+    &:active {
+      background-color: $color-primary-light;
+    }
   }
 
   &--solid-dark {
@@ -40,6 +49,9 @@ a.button {
     &:active {
       background-color: $color-white;
       color: $color-primary-dark; 
+    }
+    &:active {
+      background-color: $color-primary-light;
     }
   }
 
