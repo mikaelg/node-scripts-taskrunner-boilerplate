@@ -29,6 +29,17 @@ $font-family-default: "Roboto", sans-serif;
 $font-family-alt: "Nunito Sans", sans-serif;
 $default-font-size: 1.6rem;
 
+$font-family-default-weight: (
+  light :400,
+  regular: 400,
+  bold: 700,
+);
+
+$font-family-alt-weight: (
+  regular: 400,
+  bold: 800,
+);
+
 /* Do math: */
 $h5: $default-font-size * $ratio;
 $h4: $h5 * $ratio;
