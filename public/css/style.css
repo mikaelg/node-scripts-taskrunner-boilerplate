@@ -433,10 +433,21 @@ a.button, input.button {
   line-height: 1.5;
   padding: .4rem 1.2rem;
   font-size: inherit;
-  color: #757575; }
+  color: #757575;
+  width: 30rem; }
   .form__element:focus {
-    color: #FFCDD2;
+    color: #B71C1C;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .form__element__select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-origin: content-box;
+    background-image: url(/img/keyboard_arrow_down-24px.svg);
+    margin-left: -4px; }
 
 .form__label {
   display: inline-block;
