@@ -1,13 +1,18 @@
 TODO
 ********************
 
-1/ IE debug cards
-2/ split design system pages
+1/ split design system pages
 - index
 - typography / buttons
 - collumns
 - cards
 
-3/ Header
-4/ navigation: hamburger, menu
-5/ paralax
+2/ Form elements
+3/ paralax
+
+
+DEBUG
+******************
+
+1/ IE debug cards
+2/ restructure basis a
