@@ -20,6 +20,11 @@
         width:15rem;
         padding-right: $gutter;
         color:inherit;
+
+        &--option {
+            padding-left: $hor-space--small;
+            width:auto;
+        }
         
 
         &--stacked {
@@ -29,5 +34,9 @@
 
     &__group {
         margin-bottom: $ver-space;
+
+        &--stacked {
+            margin-bottom: $ver-space--small;
+        }
     }
 }

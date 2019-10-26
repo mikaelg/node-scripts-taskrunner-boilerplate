@@ -443,11 +443,16 @@ a.button, input.button {
   width: 15rem;
   padding-right: 26px;
   color: inherit; }
+  .form__label--option {
+    padding-left: 15.47619px;
+    width: auto; }
   .form__label--stacked {
     width: 100%; }
 
 .form__group {
   margin-bottom: 26px; }
+  .form__group--stacked {
+    margin-bottom: 15.47619px; }
 
 .footer {
   background-color: #FFCDD2; }
