@@ -1,0 +1,33 @@
+.form {
+    &__element {
+        border: 1px solid $color-grey;
+        border-radius: .3rem;
+        line-height: 1.5;
+        padding: .4rem 1.2rem;
+        font-size: inherit;
+        color:$color-grey;
+
+        &:focus {
+           //color: $color-grey-dark;  
+           color: $color-primary-light;
+           @include shadow;
+        }
+        
+    }
+
+    &__label {
+        display: inline-block;
+        width:15rem;
+        padding-right: $gutter;
+        color:inherit;
+        
+
+        &--stacked {
+            width: 100%;
+        }
+    }
+
+    &__group {
+        margin-bottom: $ver-space;
+    }
+}

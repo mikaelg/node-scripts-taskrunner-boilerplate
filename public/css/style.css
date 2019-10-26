@@ -280,27 +280,6 @@ blockquote {
       .columns--2col-cards > div:nth-of-type(2n) {
         margin-right: 0px; } }
 
-.u-center-text {
-  text-align: center !important; }
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important; }
-
-.u-margin-bottom-medium {
-  margin-bottom: 4rem !important; }
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
-
-.u-margin-top-big {
-  margin-top: 8rem !important; }
-
-.u-margin-top-medium {
-  margin-top: 4rem !important; }
-
-.u-margin-top-small {
-  margin-top: 1.5rem !important; }
-
 .search-icon {
   display: inline-block;
   width: 1.8em;
@@ -439,6 +418,28 @@ a.button {
     justify-content: start; }
     .card__header > a {
       margin-left: 1rem; }
+
+.form__element {
+  border: 1px solid #757575;
+  border-radius: .3rem;
+  line-height: 1.5;
+  padding: .4rem 1.2rem;
+  font-size: inherit;
+  color: #757575; }
+  .form__element:focus {
+    color: #FFCDD2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.form__label {
+  display: inline-block;
+  width: 15rem;
+  padding-right: 26px;
+  color: inherit; }
+  .form__label--stacked {
+    width: 100%; }
+
+.form__group {
+  margin-bottom: 26px; }
 
 .footer {
   background-color: #FFCDD2; }
