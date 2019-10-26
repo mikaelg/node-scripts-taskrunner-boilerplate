@@ -16,4 +16,16 @@
     justify-content: center;
     align-items: center;
   }
+
+  &__link {
+
+      box-shadow: none;
+      // display: flex;
+      // align-items: center;
+    
+      &:hover,
+      &:active {
+        box-shadow: none;
+      }
+  }
 }

@@ -21,18 +21,16 @@
         flex-shrink: 1;
         flex-basis: auto;
 
-        & > a {
-            box-shadow: none;
-            display: flex;
-            align-items: center;
+        // & > a {
+        //     box-shadow: none;
+        //     display: flex;
+        //     align-items: center;
           
-            &:hover,
-            &:active {
-              box-shadow: none;
-            }
-          
-
-        }
+        //     &:hover,
+        //     &:active {
+        //       box-shadow: none;
+        //     }
+        // }
 
         @include breakpoint-md {
             order:1;
@@ -69,12 +67,6 @@
         //margin-left:auto;
         //text-align: center;
 
-        > span {
-            font-family: $font-family-alt;
-            font-size: $h2;
-            font-weight: 800;
-        }
-
         @include breakpoint-md {
             flex-basis: auto;
             order:2;
@@ -84,10 +76,38 @@
 
 }
 
-#logo {
-    width: 5rem;
+// #logo {
+//     width: 5rem;
 
-    .cls-1 {
-        fill: $color-primary;
+//     .cls-1 {
+//         fill: $color-primary;
+//     }
+// }
+
+.branding {
+    &__baseline {
+        font-family: $font-family-alt;
+        font-size: $h2;
+        font-weight: 800;
+    }
+    
+    &__link {
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+      
+        &:hover,
+        &:active {
+          box-shadow: none;
+        }
+    }
+    
+    &__logo {
+        width: 5rem;
+    
+        .cls-1 {
+            fill: $color-primary;
+        }
     }
 }
+
