@@ -438,7 +438,7 @@ a.button, input.button {
   .form__element:focus {
     color: #B71C1C;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  .form__element__select {
+  .form__element--select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -457,13 +457,18 @@ a.button, input.button {
   .form__label--option {
     padding-left: 15.47619px;
     width: auto; }
-  .form__label--stacked {
-    width: 100%; }
 
 .form__group {
+  display: flex;
   margin-bottom: 26px; }
   .form__group--stacked {
+    flex-direction: column;
     margin-bottom: 15.47619px; }
+  .form__group--container {
+    display: flex;
+    flex-wrap: wrap; }
+    .form__group--container-stacked {
+      flex-direction: column; }
 
 .footer {
   background-color: #FFCDD2; }
