@@ -29,6 +29,7 @@
 
         &--chekbox-wrapper {
 
+            & input[type="radio"],
             & input[type="checkbox"] {
                 opacity: 0;
             }
@@ -49,7 +50,8 @@
             width:auto;
             position: relative;
 
-            &::before{
+            input[type="radio"] + &::before,
+            input[type="checkbox"] + &::before {
                 content: "";
                 display: inline-block;
                 margin-left: -26px;
@@ -62,7 +64,13 @@
 
             }
 
-            &::after {
+            input[type="radio"] + &::before {
+                border-radius: 100%; 
+            }
+
+
+            input[type="radio"] + &::after,
+            input[type="checkbox"] + &::after {
                 content: "";
                 display: inline-block;  
                 margin-left: -11px;
@@ -89,9 +97,11 @@
             }
 
             /*Hide the checkmark by default*/
+            .form__element--chekbox-wrapper input[type="radio"] + &::after,
             .form__element--chekbox-wrapper input[type="checkbox"] + &::after {
                 content: none;
             }/*Unhide the checkmark on the checked state*/
+            .form__element--chekbox-wrapper input[type="radio"]:checked + &::after,
             .form__element--chekbox-wrapper input[type="checkbox"]:checked + &::after {
                 content: "";
             }

@@ -448,6 +448,7 @@ a.button, input.button {
     background-origin: content-box;
     background-image: url(/img/keyboard_arrow_down-24px.svg);
     margin-left: -4px; }
+  .form__element--chekbox-wrapper input[type="radio"],
   .form__element--chekbox-wrapper input[type="checkbox"] {
     opacity: 0; }
 
@@ -465,7 +466,8 @@ a.button, input.button {
     /*Hide the checkmark by default*/
     /*Unhide the checkmark on the checked state*/
     /*Adding focus styles on the outer-box of the fake checkbox*/ }
-    .form__label--option::before {
+    input[type="radio"] + .form__label--option::before,
+    input[type="checkbox"] + .form__label--option::before {
       content: "";
       display: inline-block;
       margin-left: -26px;
@@ -473,7 +475,10 @@ a.button, input.button {
       width: 16px;
       border: 1px solid;
       border-radius: .3rem; }
-    .form__label--option::after {
+    input[type="radio"] + .form__label--option::before {
+      border-radius: 100%; }
+    input[type="radio"] + .form__label--option::after,
+    input[type="checkbox"] + .form__label--option::after {
       content: "";
       display: inline-block;
       margin-left: -11px;
@@ -489,8 +494,10 @@ a.button, input.button {
     .form__label--option::after {
       left: 4px;
       top: 7px; }
+    .form__element--chekbox-wrapper input[type="radio"] + .form__label--option::after,
     .form__element--chekbox-wrapper input[type="checkbox"] + .form__label--option::after {
       content: none; }
+    .form__element--chekbox-wrapper input[type="radio"]:checked + .form__label--option::after,
     .form__element--chekbox-wrapper input[type="checkbox"]:checked + .form__label--option::after {
       content: ""; }
 
