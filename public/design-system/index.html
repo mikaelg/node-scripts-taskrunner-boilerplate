@@ -93,9 +93,15 @@
                     <h2>Webform</h2>
                     <div class="form__group">
                         <legend class="form__label">Title:</legend>
-                        <input type="radio" name="title" id="title-mr" value="Mr."><label for="title-mr" class="form__label form__label--option">Mr.</label>
-                        <input type="radio" name="title" id="title-ms" value="Ms."><label for="title-ms" class="form__label form__label--option">Ms.</label>
-                        <input type="radio" name="title" id="title-mss" value="Mss."><label for="title-mss" class="form__label form__label--option">Mss.</label>
+                        <div class="form__element--chekbox-wrapper">
+                            <input type="radio" name="title" id="title-mr" value="Mr."><label for="title-mr" class="form__label form__label--option">Mr.</label>
+                        </div>
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="radio" name="title" id="title-ms" value="Ms."><label for="title-ms" class="form__label form__label--option">Ms.</label>
+                        </div>
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="radio" name="title" id="title-mss" value="Mss."><label for="title-mss" class="form__label form__label--option">Mss.</label>
+                        </div>
                     </div>                   
                     <div class="form__group">
                         <label for="first-name" class="form__label">First name:</label><input type="text" name="first-name" id="" class="form__element"> 
@@ -132,21 +138,29 @@
                         </div>
                     </div>
                     <div class="form__group">
-                        <input type="checkbox" name="gdpr" id="gdpr" value="allow-contact"><label for="title-mr" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="checkbox" name="gdpr" id="gdpr" value="allow-contact"><label for="gdpr" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        </div>
                     </div> 
                     <h2>Webform - stacked labels</h2>
                     <div class="form__group form__group--stacked">
                         <legend class="form__label">Title:</legend>
                         <div class="form__group--container">
-                            <input type="radio" name="title" id="title-mr-2" value="Mr."><label for="title-mr-2" class="form__label form__label--option">Mr.</label>
-                            <input type="radio" name="title" id="title-ms-2" value="Ms."><label for="title-ms-2" class="form__label form__label--option">Ms.</label>
-                            <input type="radio" name="title" id="title-mss-2" value="Mss."><label for="title-mss-2" class="form__label form__label--option">Mss.</label>                            
+                            <div class="form__element--chekbox-wrapper"> 
+                                <input type="radio" name="title" id="title-mr-2" value="Mr."><label for="title-mr-2" class="form__label form__label--option">Mr.</label>
+                            </div>
+                            <div class="form__element--chekbox-wrapper">
+                                <input type="radio" name="title" id="title-ms-2" value="Ms."><label for="title-ms-2" class="form__label form__label--option">Ms.</label>
+                            </div>
+                            <div class="form__element--chekbox-wrapper">
+                                <input type="radio" name="title" id="title-mss-2" value="Mss."><label for="title-mss-2" class="form__label form__label--option">Mss.</label>                            
+                            </div>
                         </div>
 
                     </div>                   
                     <div class="form__group form__group--stacked">
-                            <label for="first-name" class="form__label">First name:</label><input type="text" name="first-name" id="" class="form__element"> 
-                        </div>
+                        <label for="first-name" class="form__label">First name:</label><input type="text" name="first-name" id="" class="form__element"> 
+                    </div>
                     <div class="form__group form__group--stacked">
                         <label for="name" class="form__label">Name:</label><input type="text" name="name" id="" class="form__element">
                     </div> 
@@ -171,7 +185,9 @@
                         </div>
                     </div> 
                     <div class="form__group">
-                        <input type="checkbox" name="gdpr" id="gdpr" value="allow-contact"><label for="title-mr" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="checkbox" name="gdpr" id="gdpr-2" value="allow-contact"><label for="gdpr-2" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        </div>
                     </div>                                     
                     <input type="submit" value="Submit" class="button button--solid"><input type="reset" value="Reset" class="button">
                 </div>

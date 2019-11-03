@@ -11,6 +11,7 @@
         &:focus {
            //color: $color-grey-dark;  
            color: $color-primary-dark;
+           outline: none;
            @include shadow;
         }
 
@@ -34,6 +35,11 @@
                 opacity: 0;
             }
 
+        }
+
+        // TEXTAREA
+        textarea & {
+            overflow: auto;
         }
         
     }
@@ -107,9 +113,12 @@
             }
 
             /*Adding focus styles on the outer-box of the fake checkbox*/
+            .form__element--chekbox-wrapper input[type="radio"]:focus + &::before,
             .form__element--chekbox-wrapper input[type="checkbox"]:focus + &::before {
-                //outline: rgb(59, 153, 252) auto 5px;
+                @include shadow;
             }
+
+
 
         }
         

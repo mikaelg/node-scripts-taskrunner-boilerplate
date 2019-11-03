@@ -27,6 +27,11 @@ a.button, input.button {
   
   }
 
+  &:focus {
+    outline: none;
+    @include shadow;
+  }
+
   &--solid {
     background-color: $color-primary;
     color: $color-white; 

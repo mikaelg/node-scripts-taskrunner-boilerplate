@@ -65,6 +65,11 @@ a {
   &:visited {
     
   }
+
+  &:focus {
+    outline: none;
+    @include shadow;
+  }
 }
 
 a.hyperstyle {
@@ -76,6 +81,11 @@ a.hyperstyle {
   &:hover,
   &:active {
     box-shadow: inset 0 -3rem 0px 0px rgba($color-primary, .2);
+  }
+
+  &:focus {
+    outline: none;
+    @include shadow;
   }
 }
 

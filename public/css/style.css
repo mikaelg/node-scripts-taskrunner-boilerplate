@@ -114,6 +114,9 @@ a {
   box-shadow: inset 0 -0.1rem 0px 0px rgba(66, 66, 66, 0.2); }
   a:hover, a:active {
     box-shadow: inset 0 -0.2rem 0px 0px rgba(66, 66, 66, 0.2); }
+  a:focus {
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 a.hyperstyle {
   padding-bottom: 4px;
@@ -122,6 +125,9 @@ a.hyperstyle {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
   a.hyperstyle:hover, a.hyperstyle:active {
     box-shadow: inset 0 -3rem 0px 0px rgba(239, 83, 80, 0.2); }
+  a.hyperstyle:focus {
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 ul {
   list-style: none;
@@ -385,6 +391,9 @@ a.button, input.button {
     color: #fff; }
   a.button:active, input.button:active {
     background-color: #B71C1C; }
+  a.button:focus, input.button:focus {
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   a.button--solid, input.button--solid {
     background-color: #EF5350;
     color: #fff; }
@@ -437,6 +446,7 @@ a.button, input.button {
   width: 30rem; }
   .form__element:focus {
     color: #B71C1C;
+    outline: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .form__element--select {
     -moz-appearance: none;
@@ -451,6 +461,8 @@ a.button, input.button {
   .form__element--chekbox-wrapper input[type="radio"],
   .form__element--chekbox-wrapper input[type="checkbox"] {
     opacity: 0; }
+  textarea .form__element {
+    overflow: auto; }
 
 .form__label {
   display: inline-block;
@@ -500,6 +512,9 @@ a.button, input.button {
     .form__element--chekbox-wrapper input[type="radio"]:checked + .form__label--option::after,
     .form__element--chekbox-wrapper input[type="checkbox"]:checked + .form__label--option::after {
       content: ""; }
+    .form__element--chekbox-wrapper input[type="radio"]:focus + .form__label--option::before,
+    .form__element--chekbox-wrapper input[type="checkbox"]:focus + .form__label--option::before {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .form__group {
   display: flex;
