@@ -448,6 +448,8 @@ a.button, input.button {
     background-origin: content-box;
     background-image: url(/img/keyboard_arrow_down-24px.svg);
     margin-left: -4px; }
+  .form__element--chekbox-wrapper input[type="checkbox"] {
+    opacity: 0; }
 
 .form__label {
   display: inline-block;
@@ -456,7 +458,41 @@ a.button, input.button {
   color: inherit; }
   .form__label--option {
     padding-left: 15.47619px;
-    width: auto; }
+    width: auto;
+    position: relative;
+    /*Outer-box*/
+    /*Checkmark*/
+    /*Hide the checkmark by default*/
+    /*Unhide the checkmark on the checked state*/
+    /*Adding focus styles on the outer-box of the fake checkbox*/ }
+    .form__label--option::before {
+      content: "";
+      display: inline-block;
+      margin-left: -26px;
+      height: 16px;
+      width: 16px;
+      border: 1px solid;
+      border-radius: .3rem; }
+    .form__label--option::after {
+      content: "";
+      display: inline-block;
+      margin-left: -11px;
+      height: 6px;
+      width: 9px;
+      border-left: 2px solid #B71C1C;
+      border-bottom: 2px solid #B71C1C;
+      transform: rotate(-45deg); }
+    .form__label--option::before, .form__label--option::after {
+      position: absolute; }
+    .form__label--option::before {
+      top: 3px; }
+    .form__label--option::after {
+      left: 4px;
+      top: 7px; }
+    .form__element--chekbox-wrapper input[type="checkbox"] + .form__label--option::after {
+      content: none; }
+    .form__element--chekbox-wrapper input[type="checkbox"]:checked + .form__label--option::after {
+      content: ""; }
 
 .form__group {
   display: flex;

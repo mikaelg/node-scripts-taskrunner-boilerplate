@@ -7,8 +7,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Roboto:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
 
         <link rel="manifest" href="/manifest.json">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/main.js"></script>
         
         <title>Generic Design System | MIG</title>
     </head>
@@ -132,7 +132,9 @@
                         </div>
                     </div>
                     <div class="form__group">
-                        <input type="checkbox" name="gdpr" id="gdpr" value="allow-contact"><label for="title-mr" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="checkbox" name="gdpr" id="gdpr" value="allow-contact"><label for="gdpr" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        </div>
                     </div> 
                     <h2>Webform - stacked labels</h2>
                     <div class="form__group form__group--stacked">
@@ -171,7 +173,9 @@
                         </div>
                     </div> 
                     <div class="form__group">
-                        <input type="checkbox" name="gdpr" id="gdpr" value="allow-contact"><label for="title-mr" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="checkbox" name="gdpr" id="gdpr-2" value="allow-contact"><label for="gdpr-2" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        </div>
                     </div>                                     
                     <input type="submit" value="Submit" class="button button--solid"><input type="reset" value="Reset" class="button">
                 </div>

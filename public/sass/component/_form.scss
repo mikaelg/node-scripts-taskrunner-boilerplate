@@ -29,6 +29,9 @@
 
         &--chekbox-wrapper {
 
+            & input[type="checkbox"] {
+                opacity: 0;
+            }
 
         }
         
@@ -44,6 +47,60 @@
         &--option {
             padding-left: $hor-space--small;
             width:auto;
+            position: relative;
+
+            &::before{
+                content: "";
+                display: inline-block;
+                margin-left: -26px;
+                
+                height: 16px;
+                width: 16px;
+                
+                border: 1px solid; 
+                border-radius: .3rem; 
+
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;  
+                margin-left: -11px;
+
+                height: 6px;
+                width: 9px;
+                border-left: 2px solid $color-primary-dark;
+                border-bottom: 2px solid $color-primary-dark;
+                
+                transform: rotate(-45deg);
+            }
+
+
+            &::before,
+            &::after {
+                position: absolute;
+            }/*Outer-box*/
+            &::before {
+                top: 3px;
+            }/*Checkmark*/
+            &::after {
+                left: 4px;
+                top: 7px;
+            }
+
+            /*Hide the checkmark by default*/
+            .form__element--chekbox-wrapper input[type="checkbox"] + &::after {
+                content: none;
+            }/*Unhide the checkmark on the checked state*/
+            .form__element--chekbox-wrapper input[type="checkbox"]:checked + &::after {
+                content: "";
+            }
+
+            /*Adding focus styles on the outer-box of the fake checkbox*/
+            .form__element--chekbox-wrapper input[type="checkbox"]:focus + &::before {
+                //outline: rgb(59, 153, 252) auto 5px;
+            }
+
         }
         
     }

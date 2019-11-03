@@ -1,9 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
-    partials("MIG-header");
-    partials("MIG-navigation",navbutton);
+    partials("MIG-navigation");
+    partials("MIG-header",navbutton);
     partials("MIG-footer");
+
+    //navbutton();
 
 });
 
